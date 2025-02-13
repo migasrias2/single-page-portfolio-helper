@@ -2,14 +2,11 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
@@ -44,10 +41,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8 text-center">
             Sobre Mim
           </h2>
-          <p className="text-lg text-muted-foreground mb-6">
-            Sou um desenvolvedor apaixonado por tecnologia com experiência em criar soluções web inovadoras. 
-            Minha jornada começou há X anos, e desde então venho construindo aplicações que fazem a diferença.
-          </p>
+          <p className="text-lg text-muted-foreground mb-6">Sou um jovem apaixonado por tecnologia e vendas online, com experiência em criar soluções web inovadoras. A minha jornada começou há 5 anos, e desde então venho construindo sites e lojas que fazem a diferença.</p>
           <p className="text-lg text-muted-foreground">
             Especializado em React, Node.js e tecnologias modernas de desenvolvimento web, 
             busco sempre aprender e evoluir para entregar os melhores resultados.
@@ -73,8 +67,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          {[2, 3].map(project => (
-            <div key={project} className="group relative overflow-hidden rounded-lg">
+          {[2, 3].map(project => <div key={project} className="group relative overflow-hidden rounded-lg">
               <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -83,8 +76,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </section>
 
@@ -111,5 +103,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
