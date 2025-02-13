@@ -42,10 +42,7 @@ const Index = () => {
             Sobre Mim
           </h2>
           <p className="text-lg text-muted-foreground mb-6">Sou um jovem apaixonado por tecnologia e vendas online, com experiência em criar soluções web inovadoras. A minha jornada começou há 5 anos, e desde então venho construindo sites e lojas que fazem a diferença.</p>
-          <p className="text-lg text-muted-foreground">
-            Especializado em React, Node.js e tecnologias modernas de desenvolvimento web, 
-            busco sempre aprender e evoluir para entregar os melhores resultados.
-          </p>
+          <p className="text-lg text-muted-foreground font-medium">E-commerce, Gestão de Redes Sociais e Desenvolvimento de Websites são as áreas onde tenho mais experiência, onde procuro sempre aprender e evoluir (sozinho ou em equipa) para entregar os melhores resultados e aumentar as minhas capacidades.</p>
         </div>
       </section>
 
