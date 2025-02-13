@@ -51,8 +51,8 @@ const Index = () => {
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="section-padding bg-secondary">
-        <div className="max-w-4xl mx-auto">
+      <section id="sobre" className="section-padding bg-secondary relative overflow-hidden">
+        <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8 text-center">
             Sobre Mim
           </h2>
@@ -68,11 +68,19 @@ const Index = () => {
       </section>
 
       {/* Projetos Section */}
-      <section id="projetos" className="section-padding">
-        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
+      <section id="projetos" className="section-padding relative overflow-hidden">
+        <Particles
+          className="absolute inset-0"
+          quantity={100}
+          ease={100}
+          color="#000000"
+          refresh={false}
+          size={0.5}
+        />
+        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center relative z-10">
           Projetos em Destaque
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto relative z-10">
           {[1, 2, 3].map((project) => (
             <div key={project} className="group relative overflow-hidden rounded-lg">
               <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
@@ -89,25 +97,35 @@ const Index = () => {
       </section>
 
       {/* Habilidades Section */}
-      <section id="habilidades" className="section-padding bg-secondary">
-        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
-          Habilidades
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          {[
-            "React", "TypeScript", "Node.js", "Next.js",
-            "TailwindCSS", "PostgreSQL", "Git", "AWS"
-          ].map((skill) => (
-            <div key={skill} className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-              <span className="font-medium">{skill}</span>
-            </div>
-          ))}
+      <section id="habilidades" className="section-padding bg-secondary relative overflow-hidden">
+        <div className="relative z-10">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
+            Habilidades
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {[
+              "React", "TypeScript", "Node.js", "Next.js",
+              "TailwindCSS", "PostgreSQL", "Git", "AWS"
+            ].map((skill) => (
+              <div key={skill} className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
+                <span className="font-medium">{skill}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Contato Section */}
-      <section id="contato" className="section-padding">
-        <div className="max-w-2xl mx-auto text-center">
+      <section id="contato" className="section-padding relative overflow-hidden">
+        <Particles
+          className="absolute inset-0"
+          quantity={100}
+          ease={100}
+          color="#000000"
+          refresh={false}
+          size={0.5}
+        />
+        <div className="max-w-2xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8">
             Vamos Conversar?
           </h2>
