@@ -24,7 +24,7 @@ function Feature() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col relative">
               <BorderTrail 
-                className="bg-gradient-to-l from-[#9b87f5] via-[#7E69AB] to-[#6E59A5]"
+                className="bg-gradient-to-l from-black via-zinc-800 to-black"
                 size={120}
               />
               <Paintbrush className="w-8 h-8 stroke-1 relative z-10" />
@@ -37,7 +37,7 @@ function Feature() {
             </div>
             <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col relative">
               <BorderTrail 
-                className="bg-gradient-to-l from-[#0EA5E9] via-[#1EAEDB] to-[#33C3F0]"
+                className="bg-gradient-to-l from-black via-zinc-800 to-black"
                 size={100}
               />
               <ShoppingCart className="w-8 h-8 stroke-1 relative z-10" />
@@ -51,7 +51,7 @@ function Feature() {
 
             <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col relative">
               <BorderTrail 
-                className="bg-gradient-to-l from-[#F2FCE2] via-[#D3E4FD] to-[#E5DEFF]"
+                className="bg-gradient-to-l from-black via-zinc-800 to-black"
                 size={100}
               />
               <Share2 className="w-8 h-8 stroke-1 relative z-10" />
@@ -64,7 +64,7 @@ function Feature() {
             </div>
             <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col relative">
               <BorderTrail 
-                className="bg-gradient-to-l from-[#8B5CF6] via-[#D6BCFA] to-[#9b87f5]"
+                className="bg-gradient-to-l from-black via-zinc-800 to-black"
                 size={120}
               />
               <Bitcoin className="w-8 h-8 stroke-1 relative z-10" />
