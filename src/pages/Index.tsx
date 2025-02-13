@@ -2,11 +2,14 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
+
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
@@ -70,16 +73,18 @@ const Index = () => {
               </div>
             </div>
           </div>
-          {[2, 3].map(project => <div key={project} className="group relative overflow-hidden rounded-lg">
+          {[2, 3].map(project => (
+            <div key={project} className="group relative overflow-hidden rounded-lg">
               <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                    <h3 className="text-xl font-semibold mb-2">Projeto {project}</h3>
-                    <p className="text-sm text-gray-200">Descrição breve do projeto</p>
+                    <h3 className="text-xl mb-2 font-bold">Projeto {project}</h3>
+                    <p className="text-gray-200 text-base font-bold">Gestão e Desenvolvimento do Website</p>
                   </div>
                 </div>
               </div>
-            </div>)}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -106,4 +111,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
