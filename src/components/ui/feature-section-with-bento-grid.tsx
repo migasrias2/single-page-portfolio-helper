@@ -1,6 +1,7 @@
 
 import { Paintbrush, ShoppingCart, Share2, Bitcoin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { BorderTrail } from "@/components/ui/border-trail";
 
 function Feature() {
   return (
@@ -21,18 +22,26 @@ function Feature() {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col">
-              <Paintbrush className="w-8 h-8 stroke-1" />
-              <div className="flex flex-col">
+            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col relative">
+              <BorderTrail 
+                className="bg-gradient-to-l from-purple-300 via-purple-500 to-purple-300"
+                size={120}
+              />
+              <Paintbrush className="w-8 h-8 stroke-1 relative z-10" />
+              <div className="flex flex-col relative z-10">
                 <h3 className="text-xl tracking-tight">Web Design</h3>
                 <p className="text-muted-foreground max-w-xs text-base">
                   Criação de designs modernos e responsivos para websites e aplicações web, focando na experiência do usuário.
                 </p>
               </div>
             </div>
-            <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col">
-              <ShoppingCart className="w-8 h-8 stroke-1" />
-              <div className="flex flex-col">
+            <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col relative">
+              <BorderTrail 
+                className="bg-gradient-to-l from-blue-300 via-blue-500 to-blue-300"
+                size={100}
+              />
+              <ShoppingCart className="w-8 h-8 stroke-1 relative z-10" />
+              <div className="flex flex-col relative z-10">
                 <h3 className="text-xl tracking-tight">E-commerce</h3>
                 <p className="text-muted-foreground max-w-xs text-base">
                   Desenvolvimento e otimização de lojas online com foco em conversão e experiência de compra.
@@ -40,18 +49,26 @@ function Feature() {
               </div>
             </div>
 
-            <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col">
-              <Share2 className="w-8 h-8 stroke-1" />
-              <div className="flex flex-col">
+            <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col relative">
+              <BorderTrail 
+                className="bg-gradient-to-l from-green-300 via-green-500 to-green-300"
+                size={100}
+              />
+              <Share2 className="w-8 h-8 stroke-1 relative z-10" />
+              <div className="flex flex-col relative z-10">
                 <h3 className="text-xl tracking-tight">Redes Sociais</h3>
                 <p className="text-muted-foreground max-w-xs text-base">
                   Gestão e estratégia de conteúdo para redes sociais, aumentando o engajamento e alcance da sua marca.
                 </p>
               </div>
             </div>
-            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col">
-              <Bitcoin className="w-8 h-8 stroke-1" />
-              <div className="flex flex-col">
+            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col relative">
+              <BorderTrail 
+                className="bg-gradient-to-l from-yellow-300 via-yellow-500 to-yellow-300"
+                size={120}
+              />
+              <Bitcoin className="w-8 h-8 stroke-1 relative z-10" />
+              <div className="flex flex-col relative z-10">
                 <h3 className="text-xl tracking-tight">Crypto</h3>
                 <p className="text-muted-foreground max-w-xs text-base">
                   Implementação de soluções blockchain e integração de pagamentos com criptomoedas em aplicações web.
