@@ -7,15 +7,11 @@ function Feature() {
         <div className="flex flex-col gap-10">
           <div className="flex gap-4 flex-col items-start">
             <div>
-              <Badge>Expertise</Badge>
+              <Badge>Skills</Badge>
             </div>
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-                Minhas Habilidades
-              </h2>
-              <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">
-                Áreas em que posso ajudar você e seu negócio a crescer
-              </p>
+              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">As Minhas Habilidades</h2>
+              <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">as áreas em que pode contar comigo! </p>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
