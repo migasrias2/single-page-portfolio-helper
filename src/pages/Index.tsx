@@ -1,11 +1,16 @@
+
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
+import { Feature } from "@/components/ui/feature-section-with-bento-grid";
+
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
@@ -73,16 +78,7 @@ const Index = () => {
 
       {/* Habilidades Section */}
       <section id="habilidades" className="section-padding bg-secondary relative overflow-hidden">
-        <div className="relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
-            Habilidades
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS", "PostgreSQL", "Git", "AWS"].map(skill => <div key={skill} className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-                <span className="font-medium">{skill}</span>
-              </div>)}
-          </div>
-        </div>
+        <Feature />
       </section>
 
       {/* Contato Section */}
@@ -103,4 +99,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
