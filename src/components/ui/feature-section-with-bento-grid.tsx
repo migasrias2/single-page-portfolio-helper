@@ -1,11 +1,8 @@
-
 import { Paintbrush, ShoppingCart, Share2, Bitcoin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { BorderTrail } from "@/components/ui/border-trail";
-
 function Feature() {
-  return (
-    <div className="w-full py-20 lg:py-40">
+  return <div className="w-full py-20 lg:py-40">
       <div className="container mx-auto">
         <div className="flex flex-col gap-10">
           <div className="flex gap-4 flex-col items-start">
@@ -26,9 +23,7 @@ function Feature() {
               <Paintbrush className="w-8 h-8 stroke-1 text-black mb-6" />
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium tracking-tight mb-3">Web Design</h3>
-                <p className="text-muted-foreground text-base">
-                  Criação de designs modernos e responsivos para websites e aplicações web, focando na experiência do usuário.
-                </p>
+                <p className="text-muted-foreground text-base">Criação de designs modernos e responsivos, com foco na experiência do usuário.</p>
               </div>
             </div>
             
@@ -64,8 +59,6 @@ function Feature() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 }
-
 export { Feature };
