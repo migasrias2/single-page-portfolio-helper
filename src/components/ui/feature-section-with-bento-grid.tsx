@@ -22,55 +22,41 @@ function Feature() {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col relative">
-              <BorderTrail 
-                className="bg-gradient-to-l from-black via-zinc-800 to-black"
-                size={120}
-              />
-              <Paintbrush className="w-8 h-8 stroke-1 relative z-10" />
-              <div className="flex flex-col relative z-10">
-                <h3 className="text-xl tracking-tight">Web Design</h3>
-                <p className="text-muted-foreground max-w-xs text-base">
+            <div className="bg-white rounded-3xl h-full lg:col-span-2 p-8 aspect-square lg:aspect-auto flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Paintbrush className="w-8 h-8 stroke-1 text-black mb-6" />
+              <div className="flex flex-col">
+                <h3 className="text-xl font-medium tracking-tight mb-3">Web Design</h3>
+                <p className="text-muted-foreground text-base">
                   Criação de designs modernos e responsivos para websites e aplicações web, focando na experiência do usuário.
                 </p>
               </div>
             </div>
-            <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col relative">
-              <BorderTrail 
-                className="bg-gradient-to-l from-black via-zinc-800 to-black"
-                size={100}
-              />
-              <ShoppingCart className="w-8 h-8 stroke-1 relative z-10" />
-              <div className="flex flex-col relative z-10">
-                <h3 className="text-xl tracking-tight">E-commerce</h3>
-                <p className="text-muted-foreground max-w-xs text-base">
+            
+            <div className="bg-white rounded-3xl p-8 aspect-square flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <ShoppingCart className="w-8 h-8 stroke-1 text-black mb-6" />
+              <div className="flex flex-col">
+                <h3 className="text-xl font-medium tracking-tight mb-3">E-commerce</h3>
+                <p className="text-muted-foreground text-base">
                   Desenvolvimento e otimização de lojas online com foco em conversão e experiência de compra.
                 </p>
               </div>
             </div>
 
-            <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col relative">
-              <BorderTrail 
-                className="bg-gradient-to-l from-black via-zinc-800 to-black"
-                size={100}
-              />
-              <Share2 className="w-8 h-8 stroke-1 relative z-10" />
-              <div className="flex flex-col relative z-10">
-                <h3 className="text-xl tracking-tight">Redes Sociais</h3>
-                <p className="text-muted-foreground max-w-xs text-base">
+            <div className="bg-white rounded-3xl p-8 aspect-square flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Share2 className="w-8 h-8 stroke-1 text-black mb-6" />
+              <div className="flex flex-col">
+                <h3 className="text-xl font-medium tracking-tight mb-3">Redes Sociais</h3>
+                <p className="text-muted-foreground text-base">
                   Gestão e estratégia de conteúdo para redes sociais, aumentando o engajamento e alcance da sua marca.
                 </p>
               </div>
             </div>
-            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col relative">
-              <BorderTrail 
-                className="bg-gradient-to-l from-black via-zinc-800 to-black"
-                size={120}
-              />
-              <Bitcoin className="w-8 h-8 stroke-1 relative z-10" />
-              <div className="flex flex-col relative z-10">
-                <h3 className="text-xl tracking-tight">Crypto</h3>
-                <p className="text-muted-foreground max-w-xs text-base">
+
+            <div className="bg-white rounded-3xl h-full lg:col-span-2 p-8 aspect-square lg:aspect-auto flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Bitcoin className="w-8 h-8 stroke-1 text-black mb-6" />
+              <div className="flex flex-col">
+                <h3 className="text-xl font-medium tracking-tight mb-3">Crypto</h3>
+                <p className="text-muted-foreground text-base">
                   Implementação de soluções blockchain e integração de pagamentos com criptomoedas em aplicações web.
                 </p>
               </div>
