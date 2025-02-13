@@ -13,7 +13,7 @@ const Index = () => {
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">Bem-vindo ao meu portfólio</span>
+          <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">BEM-VINDO/A AO MEU PORTFÓLIO</span>
           <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">Miguel Martins</h1>
           <p className="text-lg max-w-2xl mx-0 px-0 text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
         </div>
