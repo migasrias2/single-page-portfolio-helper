@@ -1,91 +1,15 @@
-
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
-import { AnimatedTabs } from "@/components/ui/animated-tabs";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const skillTabs = [
-    {
-      id: "frontend",
-      label: "Frontend",
-      content: (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">React</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">TypeScript</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Next.js</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">TailwindCSS</span>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: "backend",
-      label: "Backend",
-      content: (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Node.js</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">PostgreSQL</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Express</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">MongoDB</span>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: "tools",
-      label: "Ferramentas",
-      content: (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Git</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">AWS</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Docker</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">CI/CD</span>
-          </div>
-        </div>
-      ),
-    },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
-        <Particles
-          className="absolute inset-0"
-          quantity={100}
-          ease={100}
-          color="#000000"
-          refresh={false}
-          size={0.5}
-        />
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">Bem-vindo ao meu portfólio</span>
@@ -129,20 +53,12 @@ const Index = () => {
 
       {/* Projetos Section */}
       <section id="projetos" className="section-padding relative overflow-hidden">
-        <Particles
-          className="absolute inset-0"
-          quantity={100}
-          ease={100}
-          color="#000000"
-          refresh={false}
-          size={0.5}
-        />
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
         <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center relative z-10">
           Projetos em Destaque
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto relative z-10">
-          {[1, 2, 3].map((project) => (
-            <div key={project} className="group relative overflow-hidden rounded-lg">
+          {[1, 2, 3].map(project => <div key={project} className="group relative overflow-hidden rounded-lg">
               <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -151,8 +67,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </section>
 
@@ -162,22 +77,17 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
             Habilidades
           </h2>
-          <div className="flex justify-center">
-            <AnimatedTabs tabs={skillTabs} className="max-w-3xl w-full" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS", "PostgreSQL", "Git", "AWS"].map(skill => <div key={skill} className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
+                <span className="font-medium">{skill}</span>
+              </div>)}
           </div>
         </div>
       </section>
 
       {/* Contato Section */}
       <section id="contato" className="section-padding relative overflow-hidden">
-        <Particles
-          className="absolute inset-0"
-          quantity={100}
-          ease={100}
-          color="#000000"
-          refresh={false}
-          size={0.5}
-        />
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
         <div className="max-w-2xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8">
             Vamos Conversar?
@@ -185,17 +95,12 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Estou sempre aberto a novas oportunidades e parcerias interessantes.
           </p>
-          <a 
-            href="mailto:seu@email.com"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
-          >
+          <a href="mailto:seu@email.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
             <Mail size={20} />
             Entre em Contato
           </a>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
