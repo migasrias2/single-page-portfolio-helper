@@ -1,35 +1,12 @@
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
-import { TiltedScroll } from "@/components/ui/tilted-scroll";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const domainItems = [
-    { id: "1", text: "Canva" },
-    { id: "2", text: "Shopify" },
-    { id: "3", text: "Lovable" },
-    { id: "4", text: "ChatGPT" },
-    { id: "5", text: "Deepseek" },
-    { id: "6", text: "Instagram" },
-    { id: "7", text: "TikTok" },
-    // Repetindo os itens para criar um efeito de scroll infinito
-    { id: "8", text: "Canva" },
-    { id: "9", text: "Shopify" },
-    { id: "10", text: "Lovable" },
-    { id: "11", text: "ChatGPT" },
-    { id: "12", text: "Deepseek" },
-    { id: "13", text: "Instagram" },
-    { id: "14", text: "TikTok" },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
@@ -71,17 +48,6 @@ const Index = () => {
             Especializado em React, Node.js e tecnologias modernas de desenvolvimento web, 
             busco sempre aprender e evoluir para entregar os melhores resultados.
           </p>
-        </div>
-      </section>
-
-      {/* Tenho domínio de Section */}
-      <section id="dominio" className="section-padding relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
-        <div className="relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
-            Tenho domínio de
-          </h2>
-          <TiltedScroll items={domainItems} className="max-w-md mx-auto" />
         </div>
       </section>
 
@@ -135,8 +101,6 @@ const Index = () => {
           </a>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
