@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
-import { AnimatedTabs } from "@/components/ui/animated-tabs";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,69 +9,6 @@ const Index = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const skillTabs = [
-    {
-      id: "frontend",
-      label: "Frontend",
-      content: (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">React</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">TypeScript</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Next.js</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">TailwindCSS</span>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: "backend",
-      label: "Backend",
-      content: (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Node.js</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">PostgreSQL</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Express</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">MongoDB</span>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: "tools",
-      label: "Ferramentas",
-      content: (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Git</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">AWS</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">Docker</span>
-          </div>
-          <div className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
-            <span className="font-medium">CI/CD</span>
-          </div>
-        </div>
-      ),
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -89,8 +25,12 @@ const Index = () => {
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">Bem-vindo ao meu portfólio</span>
-          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">Miguel Martins</h1>
-          <p className="text-lg max-w-2xl mx-0 px-0 text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
+          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">
+            Seu Nome
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            Desenvolvedor Full Stack apaixonado por criar experiências digitais excepcionais
+          </p>
         </div>
         
         <div className={`flex gap-6 mt-8 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
@@ -111,8 +51,8 @@ const Index = () => {
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="section-padding bg-secondary relative overflow-hidden">
-        <div className="max-w-4xl mx-auto relative z-10">
+      <section id="sobre" className="section-padding bg-secondary">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8 text-center">
             Sobre Mim
           </h2>
@@ -128,19 +68,11 @@ const Index = () => {
       </section>
 
       {/* Projetos Section */}
-      <section id="projetos" className="section-padding relative overflow-hidden">
-        <Particles
-          className="absolute inset-0"
-          quantity={100}
-          ease={100}
-          color="#000000"
-          refresh={false}
-          size={0.5}
-        />
-        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center relative z-10">
+      <section id="projetos" className="section-padding">
+        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
           Projetos em Destaque
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[1, 2, 3].map((project) => (
             <div key={project} className="group relative overflow-hidden rounded-lg">
               <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
@@ -157,28 +89,25 @@ const Index = () => {
       </section>
 
       {/* Habilidades Section */}
-      <section id="habilidades" className="section-padding bg-secondary relative overflow-hidden">
-        <div className="relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
-            Habilidades
-          </h2>
-          <div className="flex justify-center">
-            <AnimatedTabs tabs={skillTabs} className="max-w-3xl w-full" />
-          </div>
+      <section id="habilidades" className="section-padding bg-secondary">
+        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
+          Habilidades
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          {[
+            "React", "TypeScript", "Node.js", "Next.js",
+            "TailwindCSS", "PostgreSQL", "Git", "AWS"
+          ].map((skill) => (
+            <div key={skill} className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
+              <span className="font-medium">{skill}</span>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* Contato Section */}
-      <section id="contato" className="section-padding relative overflow-hidden">
-        <Particles
-          className="absolute inset-0"
-          quantity={100}
-          ease={100}
-          color="#000000"
-          refresh={false}
-          size={0.5}
-        />
-        <div className="max-w-2xl mx-auto text-center relative z-10">
+      <section id="contato" className="section-padding">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8">
             Vamos Conversar?
           </h2>
