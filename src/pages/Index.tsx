@@ -14,7 +14,7 @@ const Index = () => {
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">Bem-vindo ao meu portfólio</span>
           <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">Miguel Martins</h1>
-          <p className="text-lg max-w-2xl mx-0 px-0 text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | Ecommerce Specialist</p>
+          <p className="text-lg max-w-2xl mx-0 px-0 text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
         </div>
         
         <div className={`flex gap-6 mt-8 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
