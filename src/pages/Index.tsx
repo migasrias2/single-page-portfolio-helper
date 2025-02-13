@@ -2,14 +2,11 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
@@ -64,21 +61,16 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto relative z-10">
           <div className="group relative overflow-hidden rounded-lg">
             <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
-              <img 
-                src="/lovable-uploads/ed11d115-5906-4891-abf6-588f873bc673.png" 
-                alt="Estética Nature Project"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
+              <img src="/lovable-uploads/ed11d115-5906-4891-abf6-588f873bc673.png" alt="Estética Nature Project" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                  <h3 className="text-xl font-semibold mb-2">Estética Nature</h3>
-                  <p className="text-sm text-gray-200">Website para clínica de estética focado em beleza natural e bem-estar</p>
+                  <h3 className="text-xl mb-2 font-bold">Estética Nature</h3>
+                  <p className="text-gray-200 text-base font-bold">Gestão e Desenvolvimento do Website</p>
                 </div>
               </div>
             </div>
           </div>
-          {[2, 3].map(project => (
-            <div key={project} className="group relative overflow-hidden rounded-lg">
+          {[2, 3].map(project => <div key={project} className="group relative overflow-hidden rounded-lg">
               <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -87,8 +79,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </section>
 
@@ -115,5 +106,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
