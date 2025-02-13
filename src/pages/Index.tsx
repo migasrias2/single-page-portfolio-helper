@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Particles } from "@/components/ui/particles";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,8 +13,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center section-padding relative">
-        <div className={`text-center transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+      <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
+        <Particles
+          className="absolute inset-0"
+          quantity={100}
+          ease={100}
+          color="#000000"
+          refresh={false}
+          size={0.5}
+        />
+
+        <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">Bem-vindo ao meu portfólio</span>
           <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">
             Seu Nome
@@ -23,7 +33,7 @@ const Index = () => {
           </p>
         </div>
         
-        <div className={`flex gap-6 mt-8 transform transition-all duration-700 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`flex gap-6 mt-8 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary transition-colors">
             <Github size={24} />
           </a>
@@ -35,7 +45,7 @@ const Index = () => {
           </a>
         </div>
 
-        <a href="#sobre" className="absolute bottom-10 animate-bounce">
+        <a href="#sobre" className="absolute bottom-10 animate-bounce z-10">
           <ChevronDown size={24} />
         </a>
       </section>
