@@ -69,7 +69,7 @@ const Index = () => {
                 alt="Estética Nature Project"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                   <h3 className="text-xl font-semibold mb-2">Estética Nature</h3>
                   <p className="text-sm text-gray-200">Website para clínica de estética focado em beleza natural e bem-estar</p>
@@ -80,7 +80,7 @@ const Index = () => {
           {[2, 3].map(project => (
             <div key={project} className="group relative overflow-hidden rounded-lg">
               <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                     <h3 className="text-xl font-semibold mb-2">Projeto {project}</h3>
                     <p className="text-sm text-gray-200">Descrição breve do projeto</p>
