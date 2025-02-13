@@ -1,36 +1,20 @@
-
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
-        <Particles
-          className="absolute inset-0"
-          quantity={100}
-          ease={100}
-          color="#000000"
-          refresh={false}
-          size={0.5}
-        />
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">Bem-vindo ao meu portfólio</span>
-          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">
-            Seu Nome
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Desenvolvedor Full Stack apaixonado por criar experiências digitais excepcionais
-          </p>
+          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">Miguel Martins</h1>
+          <p className="text-lg max-w-2xl mx-0 px-0 text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | Ecommerce Specialist</p>
         </div>
         
         <div className={`flex gap-6 mt-8 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
@@ -69,20 +53,12 @@ const Index = () => {
 
       {/* Projetos Section */}
       <section id="projetos" className="section-padding relative overflow-hidden">
-        <Particles
-          className="absolute inset-0"
-          quantity={100}
-          ease={100}
-          color="#000000"
-          refresh={false}
-          size={0.5}
-        />
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
         <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center relative z-10">
           Projetos em Destaque
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto relative z-10">
-          {[1, 2, 3].map((project) => (
-            <div key={project} className="group relative overflow-hidden rounded-lg">
+          {[1, 2, 3].map(project => <div key={project} className="group relative overflow-hidden rounded-lg">
               <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -91,8 +67,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </section>
 
@@ -103,28 +78,16 @@ const Index = () => {
             Habilidades
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {[
-              "React", "TypeScript", "Node.js", "Next.js",
-              "TailwindCSS", "PostgreSQL", "Git", "AWS"
-            ].map((skill) => (
-              <div key={skill} className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
+            {["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS", "PostgreSQL", "Git", "AWS"].map(skill => <div key={skill} className="glass p-4 rounded-lg text-center hover:scale-105 transition-transform">
                 <span className="font-medium">{skill}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
 
       {/* Contato Section */}
       <section id="contato" className="section-padding relative overflow-hidden">
-        <Particles
-          className="absolute inset-0"
-          quantity={100}
-          ease={100}
-          color="#000000"
-          refresh={false}
-          size={0.5}
-        />
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
         <div className="max-w-2xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8">
             Vamos Conversar?
@@ -132,17 +95,12 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Estou sempre aberto a novas oportunidades e parcerias interessantes.
           </p>
-          <a 
-            href="mailto:seu@email.com"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
-          >
+          <a href="mailto:seu@email.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
             <Mail size={20} />
             Entre em Contato
           </a>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
