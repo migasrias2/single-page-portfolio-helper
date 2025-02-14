@@ -152,7 +152,7 @@ const Index = () => {
             Estou sempre aberto a novas oportunidades e parcerias interessantes.
           </p>
           <a href="mailto:seu@email.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:opacity-90 transition-opacity">
-            <Mail size={20} />
+            <Instagram size={20} />
             Entre em Contato
           </a>
         </div>
