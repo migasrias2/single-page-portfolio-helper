@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Instagram, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
@@ -34,13 +35,13 @@ const Index = () => {
         </div>
         
         <div className={`flex gap-6 mt-12 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
+          <a href="https://github.com/migasrias2" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
+          <a href="https://www.linkedin.com/in/miguel-martins-68a211284/" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
+          <a href="https://www.instagram.com/miguelfmartinss/" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
             <Instagram size={24} />
           </a>
         </div>
