@@ -80,9 +80,10 @@ const Index = () => {
 
           <div className="group relative overflow-hidden rounded-lg">
             <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
+              <img src="/lovable-uploads/ee6fbd77-aa1c-4b6b-a8bd-bc6809f919ad.png" alt="Total Sales Project" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                  <h3 className="text-xl mb-2 font-bold">Projeto 3</h3>
+                  <h3 className="text-xl mb-2 font-bold">Wiser Metrics</h3>
                   <p className="text-gray-200 text-base font-bold">Gestão e Desenvolvimento do Website</p>
                 </div>
               </div>
