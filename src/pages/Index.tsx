@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
@@ -11,16 +10,16 @@ const Index = () => {
   }, []);
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 md:px-12 lg:px-24 relative overflow-hidden">
+      <section className="min-h-screen flex flex-col justify-center items-center px-8 md:px-16 lg:px-32 relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">BEM-VINDO/A AO MEU PORTFÓLIO</span>
-          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">Miguel Martins</h1>
+          <span className="text-sm uppercase tracking-widest mb-6 inline-block font-medium">BEM-VINDO/A AO MEU PORTFÓLIO</span>
+          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-8">Miguel Martins</h1>
           <p className="text-lg max-w-2xl mx-auto text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
         </div>
         
-        <div className={`flex gap-6 mt-8 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`flex gap-6 mt-12 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary transition-colors">
             <Github size={24} />
           </a>
@@ -32,29 +31,29 @@ const Index = () => {
           </a>
         </div>
 
-        <a href="#sobre" className="absolute bottom-10 animate-bounce z-10">
+        <a href="#sobre" className="absolute bottom-16 animate-bounce z-10">
           <ChevronDown size={24} />
         </a>
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="py-24 px-6 md:px-12 lg:px-24 bg-secondary relative overflow-hidden">
+      <section id="sobre" className="section-padding bg-secondary relative overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
             Sobre Mim
           </h2>
-          <p className="text-lg text-muted-foreground mb-6">Sou um jovem apaixonado por tecnologia e vendas online, com experiência em criar soluções web inovadoras. A minha jornada começou há 5 anos, e desde então venho construindo sites e lojas que fazem a diferença.</p>
+          <p className="text-lg text-muted-foreground mb-8">Sou um jovem apaixonado por tecnologia e vendas online, com experiência em criar soluções web inovadoras. A minha jornada começou há 5 anos, e desde então venho construindo sites e lojas que fazem a diferença.</p>
           <p className="text-lg text-muted-foreground font-medium">E-commerce, Gestão de Redes Sociais e Desenvolvimento de Websites são as áreas onde tenho mais experiência, onde procuro sempre aprender e evoluir (sozinho ou em equipa) para entregar os melhores resultados e aumentar as minhas capacidades.</p>
         </div>
       </section>
 
       {/* Projetos Section */}
-      <section id="projetos" className="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+      <section id="projetos" className="section-padding relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
-        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center relative z-10">
+        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center relative z-10">
           Projetos em Destaque
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto relative z-10">
           <div className="group relative overflow-hidden rounded-lg">
             <div className="aspect-video bg-muted relative overflow-hidden rounded-lg">
               <img src="/lovable-uploads/ed11d115-5906-4891-abf6-588f873bc673.png" alt="Estética Nature Project" className="absolute inset-0 w-full h-full object-cover" />
@@ -94,17 +93,17 @@ const Index = () => {
       </section>
 
       {/* Habilidades Section */}
-      <section className="py-24 px-6 md:px-12 lg:px-24 bg-secondary relative overflow-hidden">
+      <section className="section-padding bg-secondary relative overflow-hidden">
         <Feature />
       </section>
 
       {/* Hobbies Section */}
-      <section className="py-24 px-6 md:px-12 lg:px-24 bg-secondary relative overflow-hidden">
+      <section className="section-padding bg-secondary relative overflow-hidden">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center">
             Hobbies
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
               <Gamepad2 className="w-8 h-8 stroke-1 text-black mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3">Futebol</h3>
@@ -129,16 +128,16 @@ const Index = () => {
       </section>
 
       {/* Contato Section */}
-      <section id="contato" className="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+      <section id="contato" className="section-padding relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
         <div className="max-w-2xl mx-auto text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12">
             Vamos Conversar?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-12">
             Estou sempre aberto a novas oportunidades e parcerias interessantes.
           </p>
-          <a href="mailto:seu@email.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+          <a href="mailto:seu@email.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:opacity-90 transition-opacity">
             <Mail size={20} />
             Entre em Contato
           </a>
