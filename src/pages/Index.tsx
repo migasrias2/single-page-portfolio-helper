@@ -99,7 +99,7 @@ const Index = () => {
       </section>
 
       {/* Habilidades Section */}
-      <section className="section-padding bg-secondary dark:bg-secondary-dark relative overflow-hidden py-px">
+      <section className="section-padding bg-secondary dark:bg-secondary-dark relative overflow-hidden py-[3px]">
         <Feature />
       </section>
 
