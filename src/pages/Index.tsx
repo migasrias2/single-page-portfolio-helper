@@ -97,7 +97,7 @@ const Index = () => {
       </section>
 
       {/* Hobbies Section */}
-      <section className="section-padding bg-secondary relative overflow-hidden">
+      <section className="section-padding bg-secondary relative overflow-hidden px-0 py-[46px]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center">
             Hobbies
