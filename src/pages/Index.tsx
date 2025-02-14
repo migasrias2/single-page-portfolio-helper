@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
@@ -93,7 +92,7 @@ const Index = () => {
       </section>
 
       {/* Habilidades Section */}
-      <section className="section-padding bg-secondary relative overflow-hidden">
+      <section className="section-padding bg-secondary relative overflow-hidden py-px">
         <Feature />
       </section>
 
@@ -145,5 +144,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
