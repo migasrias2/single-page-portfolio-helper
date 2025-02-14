@@ -36,7 +36,7 @@ const Index = () => {
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="section-padding bg-secondary relative overflow-hidden">
+      <section id="sobre" className="section-padding bg-secondary relative overflow-hidden py-[44px]">
         <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
             Sobre Mim
