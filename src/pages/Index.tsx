@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
@@ -63,7 +64,14 @@ const Index = () => {
 
       {/* Projetos Section */}
       <section id="projetos" className="section-padding relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
+        <Particles 
+          className="absolute inset-0" 
+          quantity={100} 
+          ease={100} 
+          color={theme === 'dark' ? "#FFFFFF" : "#000000"} 
+          refresh={false} 
+          size={0.5} 
+        />
         <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center relative z-10">
           Projetos em Destaque
         </h2>
@@ -143,7 +151,14 @@ const Index = () => {
 
       {/* Contato Section */}
       <section id="contato" className="section-padding relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
+        <Particles 
+          className="absolute inset-0" 
+          quantity={100} 
+          ease={100} 
+          color={theme === 'dark' ? "#FFFFFF" : "#000000"} 
+          refresh={false} 
+          size={0.5} 
+        />
         <div className="max-w-2xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12">
             Vamos Conversar?
