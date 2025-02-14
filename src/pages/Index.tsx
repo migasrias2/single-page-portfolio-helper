@@ -8,16 +8,10 @@ import { useTheme } from "@/hooks/use-theme";
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { theme } = useTheme();
-  const [particleKey, setParticleKey] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  // Force particles to re-render when theme changes
-  useEffect(() => {
-    setParticleKey(prev => prev + 1);
-  }, [theme]);
 
   return <div className="min-h-screen bg-background dark:bg-background-dark">
       <ThemeToggle />
@@ -25,7 +19,6 @@ const Index = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center px-8 md:px-16 lg:px-32 relative overflow-hidden">
         <Particles 
-          key={particleKey}
           className="absolute inset-0" 
           quantity={100} 
           ease={100} 
@@ -71,7 +64,6 @@ const Index = () => {
       {/* Projetos Section */}
       <section id="projetos" className="section-padding relative overflow-hidden">
         <Particles 
-          key={`projects-${particleKey}`}
           className="absolute inset-0" 
           quantity={100} 
           ease={100} 
@@ -159,7 +151,6 @@ const Index = () => {
       {/* Contato Section */}
       <section id="contato" className="section-padding relative overflow-hidden">
         <Particles 
-          key={`contact-${particleKey}`}
           className="absolute inset-0" 
           quantity={100} 
           ease={100} 
