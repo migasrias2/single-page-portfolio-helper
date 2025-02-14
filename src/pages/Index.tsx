@@ -1,23 +1,31 @@
 import { useState, useEffect } from "react";
-import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
+import { Github, Linkedin, Instagram, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { useTheme } from "@/hooks/use-theme";
+
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const {
-    theme
-  } = useTheme();
+  const { theme } = useTheme();
+
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
   return <div className="min-h-screen bg-background dark:bg-background-dark">
       <ThemeToggle />
       
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center px-8 md:px-16 lg:px-32 relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color={theme === 'dark' ? "#FFFFFF" : "#000000"} refresh={false} size={0.5} />
+        <Particles 
+          className="absolute inset-0" 
+          quantity={100} 
+          ease={100} 
+          color={theme === 'dark' ? "#FFFFFF" : "#000000"} 
+          refresh={false} 
+          size={0.5} 
+        />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-6 inline-block font-medium dark:text-white">BEM-VINDO/A AO MEU PORTFÓLIO</span>
@@ -32,8 +40,8 @@ const Index = () => {
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="mailto:seu@email.com" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
-            <Mail size={24} />
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
+            <Instagram size={24} />
           </a>
         </div>
 
@@ -151,4 +159,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
