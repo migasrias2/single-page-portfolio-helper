@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
@@ -83,8 +82,8 @@ const Index = () => {
               <img src="/lovable-uploads/1a0fbe81-90b3-494d-8f82-349dfc4e0794.png" alt="Total Sales Project" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                  <h3 className="text-xl mb-2 font-bold">Wiser Metrics</h3>
-                  <p className="text-gray-200 text-base font-bold">Gestão e Desenvolvimento do Website</p>
+                  <h3 className="text-xl mb-2 font-bold">Projeto Pessoal</h3>
+                  <p className="text-gray-200 text-base font-bold">Resultados da loja de E-commerce</p>
                 </div>
               </div>
             </div>
@@ -145,5 +144,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
