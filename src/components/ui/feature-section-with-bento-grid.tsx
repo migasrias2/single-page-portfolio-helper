@@ -1,6 +1,7 @@
+
 import { Paintbrush, ShoppingCart, Share2, Bitcoin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { BorderTrail } from "@/components/ui/border-trail";
+
 function Feature() {
   return <div className="w-full py-20 lg:py-40">
       <div className="container mx-auto">
@@ -10,8 +11,8 @@ function Feature() {
               <Badge>Skills</Badge>
             </div>
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">As Minhas Habilidades</h2>
-              <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground text-left">as áreas em que pode contar comigo! </p>
+              <h2 className="text-3xl md:text-4xl font-display font-semibold tracking-tight mb-2">As Minhas Habilidades</h2>
+              <p className="text-lg text-muted-foreground mb-6">as áreas em que pode contar comigo!</p>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
