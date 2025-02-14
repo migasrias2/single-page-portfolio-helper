@@ -1,7 +1,9 @@
+
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
+
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
@@ -9,13 +11,13 @@ const Index = () => {
   }, []);
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 md:px-12 lg:px-24 relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-4 inline-block font-medium">BEM-VINDO/A AO MEU PORTFÓLIO</span>
           <h1 className="text-4xl md:text-6xl font-display font-semibold mb-6">Miguel Martins</h1>
-          <p className="text-lg max-w-2xl mx-0 px-0 text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
+          <p className="text-lg max-w-2xl mx-auto text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
         </div>
         
         <div className={`flex gap-6 mt-8 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
@@ -36,7 +38,7 @@ const Index = () => {
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="section-padding bg-secondary relative overflow-hidden">
+      <section id="sobre" className="py-24 px-6 md:px-12 lg:px-24 bg-secondary relative overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8 text-center">
             Sobre Mim
@@ -47,7 +49,7 @@ const Index = () => {
       </section>
 
       {/* Projetos Section */}
-      <section id="projetos" className="section-padding relative overflow-hidden">
+      <section id="projetos" className="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
         <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center relative z-10">
           Projetos em Destaque
@@ -92,12 +94,12 @@ const Index = () => {
       </section>
 
       {/* Habilidades Section */}
-      <section className="py-12 px-6 md:px-12 lg:px-24 bg-secondary relative overflow-hidden">
+      <section className="py-24 px-6 md:px-12 lg:px-24 bg-secondary relative overflow-hidden">
         <Feature />
       </section>
 
       {/* Hobbies Section */}
-      <section className="section-padding bg-secondary relative overflow-hidden">
+      <section className="py-24 px-6 md:px-12 lg:px-24 bg-secondary relative overflow-hidden">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
             Hobbies
@@ -114,7 +116,7 @@ const Index = () => {
             <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
               <Cpu className="w-8 h-8 stroke-1 text-black mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3">Tecnologia</h3>
-              <p className="text-muted-foreground text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
+              <p className="text-muted-foreground text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
             </div>
 
             <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -127,7 +129,7 @@ const Index = () => {
       </section>
 
       {/* Contato Section */}
-      <section id="contato" className="section-padding relative overflow-hidden">
+      <section id="contato" className="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
         <div className="max-w-2xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-8">
@@ -144,4 +146,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
