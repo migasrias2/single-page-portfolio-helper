@@ -1,15 +1,11 @@
 
 import { Paintbrush, ShoppingCart, Share2, Bitcoin } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 
 function Feature() {
   return <div className="w-full py-20 lg:py-40">
       <div className="container mx-auto">
         <div className="flex flex-col gap-10">
-          <div className="flex gap-4 flex-col items-start">
-            <div>
-              <Badge>Skills</Badge>
-            </div>
+          <div className="flex gap-4 flex-col items-center text-center">
             <div className="flex gap-2 flex-col">
               <h2 className="text-3xl md:text-4xl font-display font-semibold tracking-tight mb-2">As Minhas Habilidades</h2>
               <p className="text-lg text-muted-foreground mb-6">as áreas em que pode contar comigo!</p>
