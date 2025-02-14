@@ -2,14 +2,11 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center section-padding relative overflow-hidden">
@@ -73,8 +70,8 @@ const Index = () => {
               <img src="/lovable-uploads/bbcbf495-2445-4b8f-8df1-e964575ae51c.png" alt="iFrame Project" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                  <h3 className="text-xl mb-2 font-bold">iFrame</h3>
-                  <p className="text-gray-200 text-base font-bold">E-commerce e Design de Produto</p>
+                  <h3 className="text-xl mb-2 font-bold">iFrame.pt</h3>
+                  <p className="text-gray-200 text-base font-bold">E-commerce e Gestão de Redes Sociais</p>
                 </div>
               </div>
             </div>
@@ -116,5 +113,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
