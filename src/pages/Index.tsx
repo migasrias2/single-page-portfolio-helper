@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
+
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
@@ -95,6 +96,40 @@ const Index = () => {
         <Feature />
       </section>
 
+      {/* Hobbies Section */}
+      <section className="section-padding bg-secondary relative overflow-hidden">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
+            Hobbies
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Gamepad2 className="w-8 h-8 stroke-1 text-black mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3">Futebol</h3>
+              <p className="text-muted-foreground text-base">
+                Jogador federado desde os 5 anos, contribuindo para o bem-estar físico e mental.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Cpu className="w-8 h-8 stroke-1 text-black mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3">Tecnologia</h3>
+              <p className="text-muted-foreground text-base">
+                Apaixonado por tecnologias digitais emergentes e suas aplicações em cenários do mundo real.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <ShoppingBag className="w-8 h-8 stroke-1 text-black mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3">Dropshipping</h3>
+              <p className="text-muted-foreground text-base">
+                Entusiasta na gestão e otimização de negócios de dropshipping de marca, explorando novos nichos de produtos e melhorando estratégias de Ecommerce.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contato Section */}
       <section id="contato" className="section-padding relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
@@ -113,4 +148,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
