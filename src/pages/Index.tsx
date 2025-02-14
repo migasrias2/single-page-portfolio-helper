@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
@@ -114,17 +113,13 @@ const Index = () => {
             <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
               <Cpu className="w-8 h-8 stroke-1 text-black mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3">Tecnologia</h3>
-              <p className="text-muted-foreground text-base">
-                Apaixonado por tecnologias digitais emergentes e suas aplicações em cenários do mundo real.
-              </p>
+              <p className="text-muted-foreground text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
             </div>
 
             <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
               <ShoppingBag className="w-8 h-8 stroke-1 text-black mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3">Dropshipping</h3>
-              <p className="text-muted-foreground text-base">
-                Entusiasta na gestão e otimização de negócios de dropshipping de marca, explorando novos nichos de produtos e melhorando estratégias de Ecommerce.
-              </p>
+              <p className="text-muted-foreground text-base">Adoro ter a liberdade e o poder de criar uma marca do 0 até ao sucesso.</p>
             </div>
           </div>
         </div>
@@ -148,5 +143,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
