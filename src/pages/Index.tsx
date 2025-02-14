@@ -2,47 +2,51 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
+
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     setIsVisible(true);
   }, []);
-  return <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background dark:bg-background-dark">
+      <ThemeToggle />
+      
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center px-8 md:px-16 lg:px-32 relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#000000" refresh={false} size={0.5} />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <span className="text-sm uppercase tracking-widest mb-6 inline-block font-medium">BEM-VINDO/A AO MEU PORTFÓLIO</span>
-          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-8">Miguel Martins</h1>
-          <p className="text-lg max-w-2xl mx-auto text-zinc-950 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
+          <span className="text-sm uppercase tracking-widest mb-6 inline-block font-medium dark:text-white">BEM-VINDO/A AO MEU PORTFÓLIO</span>
+          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-8 dark:text-white">Miguel Martins</h1>
+          <p className="text-lg max-w-2xl mx-auto text-zinc-950 dark:text-zinc-200 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
         </div>
         
         <div className={`flex gap-6 mt-12 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary transition-colors">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary transition-colors">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="mailto:seu@email.com" className="p-2 hover:text-primary transition-colors">
+          <a href="mailto:seu@email.com" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
             <Mail size={24} />
           </a>
         </div>
 
-        <a href="#sobre" className="absolute bottom-16 animate-bounce z-10">
+        <a href="#sobre" className="absolute bottom-16 animate-bounce z-10 dark:text-white">
           <ChevronDown size={24} />
         </a>
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="section-padding bg-secondary relative overflow-hidden py-[44px]">
+      <section id="sobre" className="section-padding bg-secondary dark:bg-secondary-dark relative overflow-hidden py-[44px]">
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center dark:text-white">
             Sobre Mim
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">Sou um jovem apaixonado por tecnologia e vendas online, com experiência em criar soluções web inovadoras. A minha jornada começou há 5 anos, e desde então venho construindo sites e lojas que fazem a diferença.</p>
-          <p className="text-lg text-muted-foreground font-medium">E-commerce, Gestão de Redes Sociais e Desenvolvimento de Websites são as áreas onde tenho mais experiência, onde procuro sempre aprender e evoluir (sozinho ou em equipa) para entregar os melhores resultados e aumentar as minhas capacidades.</p>
+          <p className="text-lg text-muted-foreground dark:text-muted-dark-foreground mb-8">Sou um jovem apaixonado por tecnologia e vendas online, com experiência em criar soluções web inovadoras. A minha jornada começou há 5 anos, e desde então venho construindo sites e lojas que fazem a diferença.</p>
+          <p className="text-lg text-muted-foreground dark:text-muted-dark-foreground font-medium">E-commerce, Gestão de Redes Sociais e Desenvolvimento de Websites são as áreas onde tenho mais experiência, onde procuro sempre aprender e evoluir (sozinho ou em equipa) para entregar os melhores resultados e aumentar as minhas capacidades.</p>
         </div>
       </section>
 
@@ -92,12 +96,12 @@ const Index = () => {
       </section>
 
       {/* Habilidades Section */}
-      <section className="section-padding bg-secondary relative overflow-hidden py-px">
+      <section className="section-padding bg-secondary dark:bg-secondary-dark relative overflow-hidden py-px">
         <Feature />
       </section>
 
       {/* Hobbies Section */}
-      <section className="section-padding bg-secondary relative overflow-hidden px-0 py-[46px]">
+      <section className="section-padding bg-secondary dark:bg-secondary-dark relative overflow-hidden px-0 py-[46px]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center">
             Hobbies
@@ -144,4 +148,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;

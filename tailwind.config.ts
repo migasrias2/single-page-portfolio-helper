@@ -24,38 +24,58 @@ export default {
         display: ["Playfair Display", "serif"],
       },
       colors: {
-        border: "#333333",
-        input: "#333333",
+        border: {
+          DEFAULT: "#333333",
+          dark: "#444444",
+        },
+        input: {
+          DEFAULT: "#333333",
+          dark: "#444444",
+        },
         ring: "#000000",
-        background: "#FFFFFF",
-        foreground: "#000000",
+        background: {
+          DEFAULT: "#FFFFFF",
+          dark: "#121212",
+        },
+        foreground: {
+          DEFAULT: "#000000",
+          dark: "#FFFFFF",
+        },
         primary: {
           DEFAULT: "#000000",
           foreground: "#FFFFFF",
+          dark: "#FFFFFF",
+          "dark-foreground": "#000000",
         },
         secondary: {
           DEFAULT: "#F1F1F1",
           foreground: "#000000",
-        },
-        destructive: {
-          DEFAULT: "#222222",
-          foreground: "#FFFFFF",
+          dark: "#1A1A1A",
+          "dark-foreground": "#FFFFFF",
         },
         muted: {
           DEFAULT: "#F3F3F3",
           foreground: "#555555",
+          dark: "#282828",
+          "dark-foreground": "#A0A0A0",
         },
         accent: {
           DEFAULT: "#888888",
           foreground: "#FFFFFF",
+          dark: "#666666",
+          "dark-foreground": "#FFFFFF",
         },
         popover: {
           DEFAULT: "#FFFFFF",
           foreground: "#000000",
+          dark: "#1A1A1A",
+          "dark-foreground": "#FFFFFF",
         },
         card: {
           DEFAULT: "#FFFFFF",
           foreground: "#000000",
+          dark: "#1A1A1A",
+          "dark-foreground": "#FFFFFF",
         },
       },
       keyframes: {
