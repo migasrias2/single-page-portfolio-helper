@@ -14,7 +14,7 @@ const Index = () => {
     setIsVisible(true);
   }, []);
 
-  return <div className="min-h-screen bg-background dark:bg-background-dark">
+  return <div className="min-h-screen bg-background-dark">
       <ThemeToggle />
       
       {/* Hero Section */}
@@ -23,49 +23,49 @@ const Index = () => {
           className="absolute inset-0" 
           quantity={100} 
           ease={100} 
-          color={theme === 'dark' ? "#FFFFFF" : "#000000"} 
+          color="#FFFFFF"
           refresh={false} 
           size={0.5} 
         />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <span className="text-sm uppercase tracking-widest mb-6 inline-block font-medium dark:text-white">BEM-VINDO/A AO MEU PORTFÓLIO</span>
-          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-8 dark:text-white">Miguel Martins</h1>
-          <p className="text-lg max-w-2xl mx-auto text-zinc-950 dark:text-zinc-200 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
+          <span className="text-sm uppercase tracking-widest mb-6 inline-block font-medium text-white">BEM-VINDO/A AO MEU PORTFÓLIO</span>
+          <h1 className="text-4xl md:text-6xl font-display font-semibold mb-8 text-white">Miguel Martins</h1>
+          <p className="text-lg max-w-2xl mx-auto text-zinc-200 md:text-base font-semibold">AI Web Designer | AI Web Developer | E-commerce Specialist</p>
         </div>
         
         <div className={`flex gap-6 mt-12 transform transition-all duration-700 delay-300 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <a href="https://github.com/migasrias2" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
+          <a href="https://github.com/migasrias2" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-gray-300 text-white transition-colors">
             <Github size={24} />
           </a>
-          <a href="https://www.linkedin.com/in/miguel-martins-68a211284/" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
+          <a href="https://www.linkedin.com/in/miguel-martins-68a211284/" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-gray-300 text-white transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="https://www.instagram.com/miguelfmartinss/" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-primary dark:text-white dark:hover:text-gray-300 transition-colors">
+          <a href="https://www.instagram.com/miguelfmartinss/" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-gray-300 text-white transition-colors">
             <Instagram size={24} />
           </a>
         </div>
 
-        <a href="#sobre" className="absolute bottom-16 animate-bounce z-10 dark:text-white">
+        <a href="#sobre" className="absolute bottom-16 animate-bounce z-10 text-white">
           <ChevronDown size={24} />
         </a>
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="section-padding bg-secondary dark:bg-secondary-dark relative overflow-hidden py-[36px]">
+      <section id="sobre" className="section-padding bg-secondary-dark relative overflow-hidden py-[36px]">
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-center text-white">
             Sobre Mim
           </h2>
-          <p className="text-lg text-muted-foreground dark:text-muted-dark-foreground mb-8">Sou um jovem apaixonado por tecnologia e vendas online, com experiência em criar soluções web inovadoras. A minha jornada começou há 5 anos, e desde então venho construindo sites e lojas que fazem a diferença.</p>
-          <p className="text-lg text-muted-foreground dark:text-muted-dark-foreground font-medium">E-commerce, Gestão de Redes Sociais e Desenvolvimento de Websites são as áreas onde tenho mais experiência, onde procuro sempre aprender e evoluir (sozinho ou em equipa) para entregar os melhores resultados e aumentar as minhas capacidades.</p>
+          <p className="text-lg text-muted-dark-foreground mb-8">Sou um jovem apaixonado por tecnologia e vendas online, com experiência em criar soluções web inovadoras. A minha jornada começou há 5 anos, e desde então venho construindo sites e lojas que fazem a diferença.</p>
+          <p className="text-lg text-muted-dark-foreground font-medium">E-commerce, Gestão de Redes Sociais e Desenvolvimento de Websites são as áreas onde tenho mais experiência, onde procuro sempre aprender e evoluir (sozinho ou em equipa) para entregar os melhores resultados e aumentar as minhas capacidades.</p>
         </div>
       </section>
 
       {/* Projetos Section */}
       <section id="projetos" className="section-padding relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color={theme === 'dark' ? "#FFFFFF" : "#000000"} refresh={false} size={0.5} />
-        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center relative z-10">
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#FFFFFF" refresh={false} size={0.5} />
+        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center relative z-10 text-white">
           Projetos em Destaque
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto relative z-10">
@@ -108,35 +108,35 @@ const Index = () => {
       </section>
 
       {/* Habilidades Section */}
-      <section className="section-padding bg-secondary dark:bg-secondary-dark relative overflow-hidden py-px">
+      <section className="section-padding bg-secondary-dark relative overflow-hidden py-px">
         <Feature />
       </section>
 
       {/* Hobbies Section */}
-      <section className="section-padding bg-secondary dark:bg-secondary-dark relative overflow-hidden px-0 py-[46px]">
+      <section className="section-padding bg-secondary-dark relative overflow-hidden px-0 py-[46px]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center text-white">
             Hobbies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-              <Gamepad2 className="w-8 h-8 stroke-1 text-black mb-6" />
-              <h3 className="text-xl font-medium tracking-tight mb-3">Futebol</h3>
-              <p className="text-muted-foreground text-base">
+            <div className="bg-background-dark rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Gamepad2 className="w-8 h-8 stroke-1 text-white mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Futebol</h3>
+              <p className="text-muted-dark-foreground text-base">
                 Jogador federado desde os 5 anos, contribuindo para o bem-estar físico e mental.
               </p>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-              <Cpu className="w-8 h-8 stroke-1 text-black mb-6" />
-              <h3 className="text-xl font-medium tracking-tight mb-3">Tecnologia</h3>
-              <p className="text-muted-foreground text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
+            <div className="bg-background-dark rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Cpu className="w-8 h-8 stroke-1 text-white mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Tecnologia</h3>
+              <p className="text-muted-dark-foreground text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-              <ShoppingBag className="w-8 h-8 stroke-1 text-black mb-6" />
-              <h3 className="text-xl font-medium tracking-tight mb-3">Dropshipping</h3>
-              <p className="text-muted-foreground text-base">Adoro ter a liberdade e o poder de criar uma marca do 0 até ao sucesso.</p>
+            <div className="bg-background-dark rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <ShoppingBag className="w-8 h-8 stroke-1 text-white mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Dropshipping</h3>
+              <p className="text-muted-dark-foreground text-base">Adoro ter a liberdade e o poder de criar uma marca do 0 até ao sucesso.</p>
             </div>
           </div>
         </div>
@@ -144,12 +144,12 @@ const Index = () => {
 
       {/* Contato Section */}
       <section id="contato" className="section-padding relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color={theme === 'dark' ? "#FFFFFF" : "#000000"} refresh={false} size={0.5} />
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#FFFFFF" refresh={false} size={0.5} />
         <div className="max-w-2xl mx-auto text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-white">
             Vamos Conversar?
           </h2>
-          <p className="text-lg text-muted-foreground mb-12">
+          <p className="text-lg text-muted-dark-foreground mb-12">
             Estou sempre aberto a novas oportunidades e parcerias interessantes.
           </p>
           <a href="mailto:seu@email.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:opacity-90 transition-opacity">
