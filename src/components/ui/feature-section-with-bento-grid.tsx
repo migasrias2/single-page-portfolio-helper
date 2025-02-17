@@ -6,7 +6,7 @@ function Feature() {
           <div className="flex gap-4 flex-col items-center text-center">
             <div className="flex gap-2 flex-col">
               <h2 className="text-3xl font-display tracking-tight mb-2 text-slate-50 font-bold md:text-5xl">As Minhas Habilidades</h2>
-              <p className="text-lg text-muted-foreground mb-6">as áreas em que pode contar comigo!</p>
+              <p className="text-lg mb-6 text-slate-50">as áreas em que pode contar comigo!</p>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
