@@ -4,14 +4,17 @@ import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { useTheme } from "@/hooks/use-theme";
+
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   const {
     theme
   } = useTheme();
+
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
   return <div className="min-h-screen bg-background-dark">
       <ThemeToggle />
       
@@ -104,30 +107,30 @@ const Index = () => {
       </section>
 
       {/* Hobbies Section */}
-      <section className="section-padding bg-secondary-dark relative overflow-hidden px-0 py-[46px]">
+      <section className="section-padding bg-background-dark relative overflow-hidden px-0 py-[46px]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center text-white">
             Hobbies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="bg-background-dark rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-[#1A1F2C] rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)]">
               <Gamepad2 className="w-8 h-8 stroke-1 text-white mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Futebol</h3>
-              <p className="text-muted-dark-foreground text-base">
+              <p className="text-zinc-400 text-base">
                 Jogador federado desde os 5 anos, contribuindo para o bem-estar físico e mental.
               </p>
             </div>
 
-            <div className="bg-background-dark rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-[#1A1F2C] rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)]">
               <Cpu className="w-8 h-8 stroke-1 text-white mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Tecnologia</h3>
-              <p className="text-muted-dark-foreground text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
+              <p className="text-zinc-400 text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
             </div>
 
-            <div className="bg-background-dark rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-[#1A1F2C] rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)]">
               <ShoppingBag className="w-8 h-8 stroke-1 text-white mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Dropshipping</h3>
-              <p className="text-muted-dark-foreground text-base">Adoro ter a liberdade e o poder de criar uma marca do 0 até ao sucesso.</p>
+              <p className="text-zinc-400 text-base">Adoro ter a liberdade e o poder de criar uma marca do 0 até ao sucesso.</p>
             </div>
           </div>
         </div>
@@ -151,4 +154,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
