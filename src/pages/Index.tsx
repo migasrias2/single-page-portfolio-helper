@@ -1,32 +1,23 @@
-
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Instagram, ChevronDown, Gamepad2, Cpu, ShoppingBag } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import { Feature } from "@/components/ui/feature-section-with-bento-grid";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { useTheme } from "@/hooks/use-theme";
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const { theme } = useTheme();
-
+  const {
+    theme
+  } = useTheme();
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
   return <div className="min-h-screen bg-background-dark">
       <ThemeToggle />
       
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center px-8 md:px-16 lg:px-32 relative overflow-hidden">
-        <Particles 
-          className="absolute inset-0" 
-          quantity={100} 
-          ease={100} 
-          color="#FFFFFF"
-          refresh={false} 
-          size={0.5} 
-        />
+        <Particles className="absolute inset-0" quantity={100} ease={100} color="#FFFFFF" refresh={false} size={0.5} />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-6 inline-block font-medium text-white">BEM-VINDO/A AO MEU PORTFÓLIO</span>
@@ -65,7 +56,7 @@ const Index = () => {
       {/* Projetos Section */}
       <section id="projetos" className="section-padding relative overflow-hidden">
         <Particles className="absolute inset-0" quantity={100} ease={100} color="#FFFFFF" refresh={false} size={0.5} />
-        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-16 text-center relative z-10 text-white">
+        <h2 className="text-3xl font-display font-semibold mb-16 text-center relative z-10 text-white md:text-6xl">
           Projetos em Destaque
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto relative z-10">
@@ -160,5 +151,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
