@@ -18,7 +18,14 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center px-8 md:px-16 lg:px-32 relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color="#FFFFFF" refresh={false} size={0.5} />
+        <Particles 
+          className="absolute inset-0" 
+          quantity={150} 
+          ease={100} 
+          color="#FFFFFF"
+          refresh={false} 
+          size={0.8} 
+        />
 
         <div className={`text-center transform transition-all duration-700 relative z-10 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <span className="text-sm uppercase tracking-widest mb-6 inline-block font-medium text-white">BEM-VINDO/A AO MEU PORTFÓLIO</span>
@@ -56,7 +63,14 @@ const Index = () => {
 
       {/* Projetos Section */}
       <section id="projetos" className="section-padding relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color="#FFFFFF" refresh={false} size={0.5} />
+        <Particles 
+          className="absolute inset-0" 
+          quantity={150} 
+          ease={100} 
+          color="#FFFFFF"
+          refresh={false} 
+          size={0.8} 
+        />
         <h2 className="text-3xl font-display font-semibold mb-16 text-center relative z-10 text-white md:text-6xl">
           Projetos em Destaque
         </h2>
@@ -111,7 +125,7 @@ const Index = () => {
             Hobbies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]">
               <Gamepad2 className="w-8 h-8 stroke-1 text-black mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3 text-black">Futebol</h3>
               <p className="text-muted-foreground text-base">
@@ -119,13 +133,13 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]">
               <Cpu className="w-8 h-8 stroke-1 text-black mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3 text-black">Tecnologia</h3>
               <p className="text-muted-foreground text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]">
               <ShoppingBag className="w-8 h-8 stroke-1 text-black mb-6" />
               <h3 className="text-xl font-medium tracking-tight mb-3 text-black">Dropshipping</h3>
               <p className="text-muted-foreground text-base">Adoro ter a liberdade e o poder de criar uma marca do 0 até ao sucesso.</p>
@@ -136,7 +150,14 @@ const Index = () => {
 
       {/* Contato Section */}
       <section id="contato" className="section-padding relative overflow-hidden">
-        <Particles className="absolute inset-0" quantity={100} ease={100} color="#FFFFFF" refresh={false} size={0.5} />
+        <Particles 
+          className="absolute inset-0" 
+          quantity={150} 
+          ease={100} 
+          color="#FFFFFF"
+          refresh={false} 
+          size={0.8} 
+        />
         <div className="max-w-2xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-12 text-white">
             Vamos Conversar?

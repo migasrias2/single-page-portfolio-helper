@@ -12,7 +12,7 @@ function Feature() {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-3xl h-full lg:col-span-2 p-8 aspect-square lg:aspect-auto flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-white rounded-3xl h-full lg:col-span-2 p-8 aspect-square lg:aspect-auto flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]">
               <Paintbrush className="w-8 h-8 stroke-1 text-black mb-6" />
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium tracking-tight mb-3">Web Design</h3>
@@ -20,7 +20,7 @@ function Feature() {
               </div>
             </div>
             
-            <div className="bg-white rounded-3xl p-8 aspect-square flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-white rounded-3xl p-8 aspect-square flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]">
               <ShoppingCart className="w-8 h-8 stroke-1 text-black mb-6" />
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium tracking-tight mb-3">E-commerce</h3>
@@ -30,7 +30,7 @@ function Feature() {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 aspect-square flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-white rounded-3xl p-8 aspect-square flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]">
               <Share2 className="w-8 h-8 stroke-1 text-black mb-6" />
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium tracking-tight mb-3">Redes Sociais</h3>
@@ -40,7 +40,7 @@ function Feature() {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl h-full lg:col-span-2 p-8 aspect-square lg:aspect-auto flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+            <div className="bg-white rounded-3xl h-full lg:col-span-2 p-8 aspect-square lg:aspect-auto flex justify-between flex-col relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)]">
               <Bitcoin className="w-8 h-8 stroke-1 text-black mb-6" />
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium tracking-tight mb-3">Crypto</h3>
