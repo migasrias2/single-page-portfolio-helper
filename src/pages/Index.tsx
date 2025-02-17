@@ -7,9 +7,7 @@ import { useTheme } from "@/hooks/use-theme";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const {
-    theme
-  } = useTheme();
+  const { theme } = useTheme();
 
   useEffect(() => {
     setIsVisible(true);
@@ -113,24 +111,24 @@ const Index = () => {
             Hobbies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="bg-[#1A1F2C] rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)]">
-              <Gamepad2 className="w-8 h-8 stroke-1 text-white mb-6" />
-              <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Futebol</h3>
-              <p className="text-zinc-400 text-base">
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Gamepad2 className="w-8 h-8 stroke-1 text-black mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3 text-black">Futebol</h3>
+              <p className="text-muted-foreground text-base">
                 Jogador federado desde os 5 anos, contribuindo para o bem-estar físico e mental.
               </p>
             </div>
 
-            <div className="bg-[#1A1F2C] rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)]">
-              <Cpu className="w-8 h-8 stroke-1 text-white mb-6" />
-              <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Tecnologia</h3>
-              <p className="text-zinc-400 text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <Cpu className="w-8 h-8 stroke-1 text-black mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3 text-black">Tecnologia</h3>
+              <p className="text-muted-foreground text-base">Apaixonado por tecnologia  que é útil e que resolve problemas mundiais.</p>
             </div>
 
-            <div className="bg-[#1A1F2C] rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)]">
-              <ShoppingBag className="w-8 h-8 stroke-1 text-white mb-6" />
-              <h3 className="text-xl font-medium tracking-tight mb-3 text-white">Dropshipping</h3>
-              <p className="text-zinc-400 text-base">Adoro ter a liberdade e o poder de criar uma marca do 0 até ao sucesso.</p>
+            <div className="bg-white rounded-3xl p-8 aspect-square flex flex-col items-start relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+              <ShoppingBag className="w-8 h-8 stroke-1 text-black mb-6" />
+              <h3 className="text-xl font-medium tracking-tight mb-3 text-black">Dropshipping</h3>
+              <p className="text-muted-foreground text-base">Adoro ter a liberdade e o poder de criar uma marca do 0 até ao sucesso.</p>
             </div>
           </div>
         </div>
